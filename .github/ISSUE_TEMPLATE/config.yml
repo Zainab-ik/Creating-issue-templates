@@ -1,0 +1,75 @@
+name: 🔁 BioModel Incorporation 
+description: Ersilia Model incorporation into BioModel repository
+title: "🔁 BioModel Incorporation: <eos name>"
+labels: [enhancement]
+assignees:
+  - miquelduranfrigola,GemmaTuron,ZainabIK
+
+body:
+
+   - type: input
+    id: model-name
+    attributes:
+      label: BioModel Name
+      description: "Suggest a name for your model"
+      placeholder: "First author, Year, a one-line description. For example; Swanson2023 - ADMET Properties Predictions. Reference"
+    validations:
+      required: true
+
+  - type: input
+    id: model-identifier
+    attributes:
+      label: Model Identifier
+      description: "Please provide the BioModel Identifier Number"
+      placeholder: "BIOMD0000000100"
+
+  - type: input
+    id: tag
+    attributes:
+      label: BioModel Tag
+      description: "The Tags are used to categorize your model in the BioModel repository. The fair AIML tag is used by BioModels to categorize Machine learning models."
+      placeholder: "fair AIML"
+
+  - type: textarea
+    attributes:
+      label: Metadata Information.
+      description: 'Any context to metadata extraction and assigning ontologies.'
+
+  - type: textarea
+    id: Contributor
+    attributes:
+      label: Contributor
+      description: "List all key Contributors"
+      value: |
+        | Role & Responsibility | Username(s) | 
+        |--|--|
+        | Curator | @username |
+        | Modeller | @usernames |
+        | Reviewer | @usernames |
+        | Others | @usernames |
+
+   - type: dropdown
+     id: Curation Status
+     attributes:
+      label: Curation Status
+      multiple: false
+      description: "Is this annotation Curated (Manually), Curated (Auto-generated), non-curated."
+      options:
+        - Manually curated 🐋
+        - Auto-generated Curation 🐅
+
+  - type: input
+    id: Annotation file
+    attributes:
+      label: Annotation File
+      description: "Add a link to the Annotation File"
+
+   - type: input
+     id: BioModel Link
+     attributes:
+      label: BioModel Link
+      description: "An EBI link to the model after uploading on BioModel repository"
+      placeholder: "https://www.ebi.ac.uk/biomodels/MODEL1907310001"
+    
+
+  
