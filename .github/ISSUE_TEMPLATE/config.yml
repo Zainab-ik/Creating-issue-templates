@@ -1,13 +1,14 @@
-name: 🔁 BioModel Incorporation 
-description: Ersilia Model incorporation into BioModel repository
+name: "🔁 BioModel Incorporation"
+description: "Ersilia Model incorporation into BioModel repository"
 title: "🔁 BioModel Incorporation: <eos name>"
 labels: [enhancement]
 assignees:
-  - miquelduranfrigola,GemmaTuron,ZainabIK
+  - miquelduranfrigola
+  - GemmaTuron
+  - ZainabIK
 
 body:
-
-   - type: input
+  - type: input
     id: model-name
     attributes:
       label: BioModel Name
@@ -36,7 +37,7 @@ body:
       description: 'Any context to metadata extraction and assigning ontologies.'
 
   - type: textarea
-    id: Contributor
+    id: contributor
     attributes:
       label: Contributor
       description: "List all key Contributors"
@@ -48,9 +49,9 @@ body:
         | Reviewer | @usernames |
         | Others | @usernames |
 
-   - type: dropdown
-     id: Curation Status
-     attributes:
+  - type: dropdown
+    id: curation-status
+    attributes:
       label: Curation Status
       multiple: false
       description: "Is this annotation Curated (Manually), Curated (Auto-generated), non-curated."
@@ -59,17 +60,14 @@ body:
         - Auto-generated Curation 🐅
 
   - type: input
-    id: Annotation file
+    id: annotation-file
     attributes:
       label: Annotation File
       description: "Add a link to the Annotation File"
 
-   - type: input
-     id: BioModel Link
-     attributes:
+  - type: input
+    id: biomodel-link
+    attributes:
       label: BioModel Link
       description: "An EBI link to the model after uploading on BioModel repository"
       placeholder: "https://www.ebi.ac.uk/biomodels/MODEL1907310001"
-    
-
-  
