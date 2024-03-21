@@ -25,7 +25,7 @@ body:
     label: Metadata Information.
     description: 'Any context to metadata extraction and assigning ontologies.'
 - type: textarea
-  id: Contributor
+  id: contributor
   attributes:
     label: Contributor
     description: "List all key Contributors"
@@ -37,7 +37,7 @@ body:
         | Reviewer | @usernames |
         | Others | @usernames |
 - type: dropdown
-  id: Curation Status
+  id: curation-status
   attributes:
     label: Curation Status
     multiple: false
@@ -46,8 +46,7 @@ body:
         - Manually curated 🐋
         - Auto-generated Curation 🐅
 - type: input
-  id: Annotation file
+  id: annotation-file
   attributes:
     label: Annotation File
     description: "Add a link to the Annotation csv File"
-      
