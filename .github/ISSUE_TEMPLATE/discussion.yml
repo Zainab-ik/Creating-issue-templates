@@ -1,1 +1,19 @@
+name: 🔁 BioModel Incorporation 
+description: Ersilia Model incorporation into BioModel repository
+title: "🔁 BioModel Incorporation: <eos name>"
+labels: [enhancement]
+assignees:
+  - miquelduranfrigola,GemmaTuron,ZainabIK
 
+  body:
+
+   - type: input
+    id: model-name
+    attributes:
+      label: BioModel Name
+      description: "Suggest a name for your model"
+      placeholder: "First author, Year, a one-line description. For example; Swanson2023 - ADMET Properties Predictions. Reference"
+    validations:
+      required: true
+
+      
